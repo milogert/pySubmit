@@ -111,22 +111,17 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "civ 5: FGCNF-6TL2Q-FVPY0\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nstar chart : HXAY-T3LR-N435-EV27\nhttp://intel.snowflakesuite.com : 5K17-A15P-413B-GS79-881R\nhttp://www.openlabs.com/Link?LID=68 : cd3456532957602f\nhttp://www.musicexperiment.com/widiapp\n\n\nC:\\Program Files (x86)\\Haskell\\bin;C:\\Program Files (x86)\\Haskell Platform\\2013.2.0.0\\lib\\extralibs\\bin;C:\\Program Files (x86)\\Haskell Platform\\2013.2.0.0\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Java\\jdk1.7.0_45\\bin\\;C:\\Perl\\bin\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;E:\\Program Files\\nodejs\\;C:\\Program Files\\OpenVPN\\bin;C:\\Go\\bin;C:\\Program Files (x86)\\Haskell Platform\\2013.2.0.0\\mingw\\bin;C:\\Python27",
-			"settings":
-			{
-				"buffer_size": 1158,
-				"line_ending": "Windows",
-				"name": "civ 5: FGCNF-6TL2Q-FVPY0"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 242.0,
+		"height": 119.0,
 		"selected_items":
 		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
 			[
 				"sort",
 				"Sort Lines"
@@ -152,7 +147,7 @@
 				"Package Control: Upgrade/Overwrite All Packages"
 			]
 		],
-		"width": 400.0
+		"width": 768.0
 	},
 	"console":
 	{
@@ -173,9 +168,12 @@
 	},
 	"file_history":
 	[
+		"/C/cygwin64/home/Milo/pySubmit/templates/login.html",
+		"/C/cygwin64/home/Milo/pySubmit/templates/index.html",
 		"/C/cygwin64/home/Milo/pySubmit/main.py",
-		"/C/cygwin64/home/Milo/pySubmit/templates/contestant.html",
 		"/C/cygwin64/home/Milo/pySubmit/templates/layout.html",
+		"/C/cygwin64/home/Milo/pySubmit/templates/admin.html",
+		"/C/cygwin64/home/Milo/pySubmit/templates/contestant.html",
 		"/C/cygwin64/home/Milo/pySubmit/README.md",
 		"/C/Users/Milo/AppData/Local/Temp/scp51733/home/campus07/mqgertje/prog2/README",
 		"/C/Users/Milo/AppData/Local/Temp/scp29458/home/campus07/mqgertje/prog2/README",
@@ -297,10 +295,7 @@
 		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/add.s",
 		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/sub.s",
 		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/shift.s",
-		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/bnz.s",
-		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/bltz.s",
-		"/E/Dropbox/code/git/class1314/comp_org/Lab7/memfile",
-		"/E/Dropbox/code/git/class1314/comp_org/Lab7/shift.s"
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/bnz.s"
 	],
 	"find":
 	{
@@ -318,6 +313,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"error",
+			"app",
 			"sizeof",
 			"aPtrT",
 			"aPtrY",
@@ -428,37 +425,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1158,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1158
-							]
-						],
-						"settings":
-						{
-							"auto_name": "civ 5: FGCNF-6TL2Q-FVPY0",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -495,7 +463,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 162.0
+		"height": 396.0
 	},
 	"output.find_results":
 	{
@@ -533,12 +501,15 @@
 	},
 	"settings":
 	{
+		"vintage":
+		{
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 262.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
