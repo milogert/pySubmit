@@ -1,0 +1,546 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"aCom",
+				"aCompSize"
+			],
+			[
+				"aMer",
+				"aMergeTwoArr"
+			],
+			[
+				"aC",
+				"aCompSize"
+			],
+			[
+				"aPrim",
+				"aPrimeSize"
+			],
+			[
+				"aMs1P",
+				"aMs1Pid"
+			],
+			[
+				"aP",
+				"aPtrX"
+			],
+			[
+				"aPivot",
+				"aPivotIndex"
+			],
+			[
+				"aPi",
+				"aPivot"
+			],
+			[
+				"aSta",
+				"aStatus"
+			],
+			[
+				"aStat",
+				"aStatusTmp"
+			],
+			[
+				"crea",
+				"createSharedMemory"
+			],
+			[
+				"aMerg",
+				"aMergeOne"
+			],
+			[
+				"aIn",
+				"aIncrement"
+			],
+			[
+				"buff",
+				"buffonsNeedle"
+			],
+			[
+				"set",
+				"setupBuffon"
+			],
+			[
+				"rand",
+				"randHelperPi"
+			],
+			[
+				"ran",
+				"randHelperOne"
+			],
+			[
+				"randHelper",
+				"randHelperOne"
+			],
+			[
+				"ui_",
+				"Ui_AdvSearchDialog"
+			],
+			[
+				"focus",
+				"focusedDeck"
+			],
+			[
+				"aPath",
+				"aPath"
+			],
+			[
+				"Basi",
+				"BasiliskMain"
+			],
+			[
+				"aIma",
+				"aImageURL"
+			],
+			[
+				"toSt",
+				"toStdString"
+			],
+			[
+				"QNetwork",
+				"QNetworkRequest"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "civ 5: FGCNF-6TL2Q-FVPY0\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nhttp://www.cyberlink.com/event/Intel/HSWStarterPackRefresh : CL195596464J1G78\nstar chart : HXAY-T3LR-N435-EV27\nhttp://intel.snowflakesuite.com : 5K17-A15P-413B-GS79-881R\nhttp://www.openlabs.com/Link?LID=68 : cd3456532957602f\nhttp://www.musicexperiment.com/widiapp\n\n\nC:\\Program Files (x86)\\Haskell\\bin;C:\\Program Files (x86)\\Haskell Platform\\2013.2.0.0\\lib\\extralibs\\bin;C:\\Program Files (x86)\\Haskell Platform\\2013.2.0.0\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Java\\jdk1.7.0_45\\bin\\;C:\\Perl\\bin\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;E:\\Program Files\\nodejs\\;C:\\Program Files\\OpenVPN\\bin;C:\\Go\\bin;C:\\Program Files (x86)\\Haskell Platform\\2013.2.0.0\\mingw\\bin;C:\\Python27",
+			"settings":
+			{
+				"buffer_size": 1158,
+				"line_ending": "Windows",
+				"name": "civ 5: FGCNF-6TL2Q-FVPY0"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 242.0,
+		"selected_items":
+		[
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"convert",
+				"Package Control: Upgrade/Overwrite All Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/cygwin64/home/Milo/pySubmit/main.py",
+		"/C/cygwin64/home/Milo/pySubmit/templates/contestant.html",
+		"/C/cygwin64/home/Milo/pySubmit/templates/layout.html",
+		"/C/cygwin64/home/Milo/pySubmit/README.md",
+		"/C/Users/Milo/AppData/Local/Temp/scp51733/home/campus07/mqgertje/prog2/README",
+		"/C/Users/Milo/AppData/Local/Temp/scp29458/home/campus07/mqgertje/prog2/README",
+		"/C/Users/Milo/AppData/Local/Temp/scp18498/home/milo/homework/cs3331/prog1/README",
+		"/C/Users/Milo/AppData/Local/Temp/scp18074/home/campus07/mqgertje/prog2/main.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp13276/home/campus07/mqgertje/prog2/test.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp29639/home/campus07/mqgertje/prog2/qsort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp29914/home/campus07/mqgertje/prog2/merge.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp04117/home/campus07/mqgertje/prog2/test2",
+		"/C/Users/Milo/AppData/Local/Temp/scp29248/home/campus07/mqgertje/prog2/main.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp29363/home/campus07/mqgertje/prog2/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp09195/home/milo/homework/cs3411/prog2/asort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp01108/home/milo/homework/cs3331/prog2/testfile",
+		"/C/Users/Milo/AppData/Local/Temp/scp01931/home/milo/homework/cs3331/prog2/test2",
+		"/C/Users/Milo/AppData/Local/Temp/scp29536/home/campus07/mqgertje/prog2/testfile",
+		"/C/Users/Milo/AppData/Local/Temp/scp40034/home/milo/homework/cs3331/prog2/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp24634/home/milo/homework/cs3331/prog2/main.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp40151/home/milo/homework/cs3331/prog2/qsort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp16643/home/milo/homework/cs3411/prog2/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp53328/home/milo/homework/cs3331/prog2/test.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp40569/home/milo/homework/cs3411/prog1/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp35102/home/milo/homework/cs3331/prog2/qsort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp18951/home/milo/homework/cs3411/prog1/copy.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp34506/home/milo/homework/cs3331/prog2/merge.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp34333/home/milo/homework/cs3331/prog2/main.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp11352/home/milo/homework/cs3331/prog1/prog1.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp54136/home/milo/homework/cs3411/prog2/asort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp10082/home/campus07/mqgertje/asort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp01538/home/campus07/mqgertje/asort.c",
+		"/E/Milo/Desktop/asort.c",
+		"/E/Milo/Desktop/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp51764/home/milo/homework/cs3411/prog2/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp24771/home/milo/homework/cs3411/prog2/asort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp52918/home/milo/homework/cs3411/prog1/copy.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp47213/home/milo/homework/cs3411/prog2/sort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp02428/home/milo/homework/cs3411/prog2/asort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp18473/home/milo/homework/cs3411/prog1/copy.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp15918/home/milo/homework/cs3411/prog2/asort.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp27450/home/milo/homework/cs3331/prog2/main.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp27120/home/milo/homework/cs3331/prog1/prog1.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp33664/home/milo/homework/cs3411/prog1/copy.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp38998/srv/http/gw/static/js/update.js",
+		"/C/Users/Milo/AppData/Local/Temp/scp48838/srv/http/gw/templates/a_base.html",
+		"/C/Users/Milo/AppData/Local/Temp/scp14878/srv/http/gw/static/js/update.js",
+		"/C/Users/Milo/AppData/Local/Temp/scp15887/srv/http/gw/model.py",
+		"/C/Users/Milo/AppData/Local/Temp/scp58280/srv/http/gw/main.py",
+		"/C/Users/Milo/AppData/Local/Temp/scp13256/srv/http/gw/templates/index.html",
+		"/C/Users/Milo/AppData/Local/Temp/scp45395/srv/http/gw/templates/a_base.html",
+		"/C/Users/Milo/AppData/Local/Temp/scp12643/srv/http/gw/api.py",
+		"/C/Users/Milo/AppData/Local/Temp/scp28269/home/milo/homework/cs3411/prog1/testtofile",
+		"/C/Users/Milo/AppData/Local/Temp/scp27615/home/milo/homework/cs3411/prog1/copy.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp28150/home/milo/homework/cs3411/prog1/testtonull",
+		"/C/Users/Milo/AppData/Local/Temp/scp36199/home/milo/homework/cs3411/prog1/createinput.sh",
+		"/C/Users/Milo/AppData/Local/Temp/scp46252/home/milo/homework/cs3411/prog1/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp25099/home/milo/homework/cs3411/prog1/testtofile",
+		"/C/Users/Milo/AppData/Local/Temp/scp46262/home/milo/homework/cs3411/prog1/testtonull",
+		"/C/Users/Milo/AppData/Local/Temp/scp47707/home/milo/homework/cs3411/prog1/copy.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp34245/home/milo/homework/cs3331/prog1/test.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp31244/home/milo/homework/cs3331/prog1/README",
+		"/C/Users/Milo/AppData/Local/Temp/scp48583/home/milo/homework/cs3331/prog1/prog1.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp48762/home/milo/homework/cs3331/prog1/test",
+		"/C/Users/Milo/AppData/Local/Temp/scp24329/home/milo/homework/cs3411/prog1/copy2.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp45040/home/milo/homework/cs3411/prog1/test.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp44009/home/milo/homework/cs3411/prog1/1KiB",
+		"/C/Users/Milo/AppData/Local/Temp/scp46096/home/milo/homework/cs3411/prog1/again",
+		"/C/Users/Milo/AppData/Local/Temp/scp46938/home/milo/homework/cs3411/prog1/test",
+		"/C/Users/Milo/AppData/Local/Temp/scp46128/home/milo/homework/cs3411/prog1/testprog",
+		"/C/Users/Milo/AppData/Local/Temp/scp46933/home/milo/homework/cs3411/prog1/copy",
+		"/C/Users/Milo/AppData/Local/Temp/scp42561/home/milo/homework/cs3411/prog1/again.jpg",
+		"/C/Program Files/OpenVPN/config/client.ovpn",
+		"/E/Milo/Desktop/client.ovpn",
+		"/C/Users/Milo/AppData/Roaming/Sublime Text 3/Packages/User/go.sublime-build",
+		"/C/Users/Milo/AppData/Local/Temp/scp33869/home/milo/homework/cs3331/prog1/test.c",
+		"/C/Users/Milo/AppData/Local/Temp/scp46961/home/milo/homework/cs3331/prog1/prog1.c",
+		"/C/Users/Milo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Milo/AppData/Local/Temp/scp09354/home/milo/tmp/jsontest/stalkernet.py",
+		"/C/Users/Milo/AppData/Local/Temp/scp25071/home/milo/tmp/jsontest/jsontest.py",
+		"/C/cygwin64/home/Milo/basilisk/help_text/menus/help.html",
+		"/C/cygwin64/home/Milo/basilisk/help_text/index.html",
+		"/C/Users/Milo/AppData/Local/Temp/scp17039/home/milo/.media/email_update.py",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/sub.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/shift.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/lab7.sublime-project",
+		"/C/Users/Milo/AppData/Local/Temp/scp15015/home/milo/git_repos/basilisk/control.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp23205/home/milo/git_repos/basilisk/basilisk.pro",
+		"/C/Users/Milo/AppData/Local/Temp/scp44227/home/milo/git_repos/basilisk/ui_AdvSearchDialog.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp13964/home/milo/git_repos/basilisk/control.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp37110/home/milo/git_repos/basilisk/model/decks/deckmanager.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp35748/home/milo/git_repos/basilisk/model/decks/deckmanager.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp40609/home/milo/git_repos/basilisk/deck.bdf",
+		"/C/Users/Milo/AppData/Local/Temp/scp18257/home/milo/git_repos/basilisk/model.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp12295/home/milo/git_repos/basilisk/model.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp19134/home/milo/git_repos/basilisk/card_images/.gitignore",
+		"/C/Users/Milo/AppData/Local/Temp/scp29668/home/milo/git_repos/basilisk/control.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp46323/home/milo/git_repos/basilisk/control.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp35753/home/milo/git_repos/basilisk/model/decks/deckmanager.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp49439/home/milo/git_repos/basilisk/model.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp53299/home/milo/git_repos/basilisk/model/decks/deckmanager.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp56264/home/milo/git_repos/basilisk/model/decks/decktree.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp57864/home/milo/git_repos/basilisk/model/decks/decktree.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp47916/home/milo/git_repos/basilisk/ui_BasiliskMain.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp32660/home/milo/git_repos/basilisk/basilisk.pro",
+		"/C/Users/Milo/AppData/Local/Temp/scp01915/home/milo/git_repos/basilisk/model.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp36635/home/milo/git_repos/basilisk/card_images/ths/48.jpg",
+		"/C/Users/Milo/AppData/Local/Temp/scp32565/home/milo/git_repos/basilisk/card_images/ths/39.jpg",
+		"/C/Users/Milo/AppData/Local/Temp/scp13691/home/milo/git_repos/basilisk/card_images/img.jpg",
+		"/C/Users/Milo/AppData/Local/Temp/scp36984/home/milo/git_repos/basilisk/Makefile",
+		"/C/Users/Milo/AppData/Local/Temp/scp35628/home/milo/git_repos/basilisk/main.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp00312/home/milo/git_repos/basilisk/ui_BasiliskMain.h",
+		"/C/Users/Milo/AppData/Local/Temp/scp03007/home/milo/git_repos/basilisk/card_images/.gitignore",
+		"/C/Users/Milo/AppData/Local/Temp/scp59145/home/campus07/mqgertje/basilisk/control.cpp",
+		"/C/Users/Milo/AppData/Local/Temp/scp00832/home/campus07/mqgertje/basilisk/model.cpp",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/bnz.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/lw.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/br.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/add.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/simple_branch.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/test_files/simple_all.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/add.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/sub.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/shift.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/bnz.s",
+		"/E/Dropbox/code/School/CS3421 Computer Organization/Lab7/bltz.s",
+		"/E/Dropbox/code/git/class1314/comp_org/Lab7/memfile",
+		"/E/Dropbox/code/git/class1314/comp_org/Lab7/shift.s"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sizeof",
+			"aPtrT",
+			"aPtrY",
+			"aPtrX",
+			"aN",
+			"aI",
+			"ai",
+			"aI",
+			"aYSize",
+			"aXI",
+			"t",
+			"j",
+			"l",
+			"p",
+			"a",
+			"  ?Magic.+",
+			"\\n\\n",
+			"^[a-z].+",
+			"aTmp",
+			"tmp",
+			" $",
+			"aQuick",
+			"(<h1)(>)([a-z]+)(</h1>)",
+			"(<li>)([a-z]+)(</li>)",
+			"\\n\\n",
+			".+ - ([a-z ',]+) - [rcmu].+",
+			".+ - ([a-z ',]+) - [rcu].+",
+			".+ - ([a-z ']+) - [rcuml].+",
+			"(^.*Product|Estimated|^.+Shop From).+",
+			"**",
+			"aBlockSize",
+			"\");\n",
+			"stdio",
+			"aBuffer",
+			"aT",
+			"child",
+			"index",
+			"buffonsNeedle",
+			"fib",
+			"^",
+			" $",
+			"\\n\\n",
+			"^(Lege|Crea).+",
+			"^[0-9]",
+			"^[0-9]\\n",
+			"theOpsTwo",
+			"theOpsOne",
+			"aslice",
+			"aNum",
+			"Args",
+			"args",
+			"parser",
+			"Parser",
+			"parser",
+			"aOp",
+			"theString",
+			"actionNew",
+			"focusedDeck",
+			"q",
+			"   ",
+			" +$",
+			"[$].+",
+			"^ +[0-9] +[0-9] +",
+			"directory",
+			"color",
+			"\n        ",
+			"^",
+			"\\n\\n+",
+			"^[a-z :'()0-9]+ - ",
+			" - [RUCM] - .+",
+			"[$.0-9]+",
+			" From this seller",
+			".+(Shop)|(Add).+|(Product).+|(Estimat).+",
+			"^[A-Za-z()0-9 ]+ - ",
+			".+Shop from this.+",
+			"Add.+",
+			"^[A-Za-z]+ - "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"\\n",
+			"",
+			"\\1 id=\\\\\"\\3\\\\\"\\2\\3\\4",
+			"\\1 id=\\\"\\3\\\"\\2\\3\\4",
+			"\\1 id=\"\\3\"\\2\\3\\4",
+			"\\1<a href=\"#\\2\">\\2</a>\\3",
+			"\\n",
+			"1 \\1",
+			"\\1",
+			"",
+			"--",
+			"1 ",
+			"",
+			" ",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1158
+							]
+						],
+						"settings":
+						{
+							"auto_name": "civ 5: FGCNF-6TL2Q-FVPY0",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 162.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "pySubmit.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
