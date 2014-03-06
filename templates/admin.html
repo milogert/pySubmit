@@ -1,5 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}Admin Panel{% endblock %}
+{% block js %}
+<script>
+  $(function() {
+
+  });
+</script>
+{% endblock %}
 {% block menu %}
 <ul class="nav navbar-nav">
   <li><a href="/admin">Admin Panel</a></li>
@@ -28,20 +35,30 @@
 
       <div class="col-md-9">
         <table class="table table-striped">
-          <tr><th>Username</th><th>Role</th><th></th></tr>
+          <tr><th>Username</th><th>Password</th><th>Role</th><th></th></tr>
           {% for aUser in theUsers %}
-            <tr><td>{{ aUser[0] }}</td><td>{{ aUser[2] }}</td><td><button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td></tr>
+            <tr>
+              <td class="username" style="vertical-align: middle;">{{ aUser[0] }}</td>
+              <td class="password" style="vertical-align: middle;">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</td>
+              <td class="role" style="vertical-align: middle;">{{ aUser[2] }}</td>
+              <td class="button">
+                <button class="btn btn-danger" style="width: 100%;">
+                  <span class="glyphicon glyphicon-remove" style="vertical-align: middle;"></span>
+                </button>
+              </td>
+            </tr>
           {% endfor %}
+          <tr>
+            <td><input type="text" class="form-control" id="newUsername" name="newUsername" placeholder="Username"></td>
+            <td><input type="text" class="form-control" id="newUserPwd" name="newUserPwd" placeholder="Password"></td>
+            <td><input type="text" class="form-control" id="newUserRole" name="newUserRole" placeholder="Role"></td>
+            <td>
+                <button class="btn btn-success" style="width: 100%;">
+                  <span class="glyphicon glyphicon-ok" style="vertical-align: middle;"></span>
+                </button>
+              </td>
+          </tr>
         </table>
-
-        <form class="form" role="form" method="POST" action="">
-          <div class="form-group">
-            <textarea class="form-control" rows="10" placeholder="username,password,role"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-default">Submit</button>
-          </div>
-        </form>
       </div>
     </div>
 
