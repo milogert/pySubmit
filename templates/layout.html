@@ -1,16 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>{% block title %}{% endblock %} - pySubmit</title>
 
     <!-- Latest compiled and minified CSS -->
     {% block css %}{% endblock %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
     {% block js %}{% endblock %}
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='js/main.js') }}"></script> -->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   </head>
   <body>
@@ -45,16 +46,11 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
     <div class="container">
       <div class="row">
         {% block content %}{% endblock %}
       </div>
-    </div>
-
-    <div class="container">
-      <footer class="footer">
-        Written with <a href="http://flask.pocoo.org/">Flask</a>.
-      </footer>
     </div>
   </body>
 </html>

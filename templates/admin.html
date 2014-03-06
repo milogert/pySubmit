@@ -1,14 +1,94 @@
 {% extends "layout.html" %}
 {% block title %}Admin Panel{% endblock %}
-{% block css %}
-  <style type="text/css">
-    .important { color: #336699; }
-  </style>
+{% block menu %}
+<ul class="nav navbar-nav">
+  <li><a href="/admin">Admin Panel</a></li>
+  <li><a href="/admin#competition">Competition</a></li>
+  <li><a href="/admin#users">User Management</a></li>
+  <li><a href="/admin#problems">Problem Management</a></li>
+  <li><a href="/admin#languages">Language Management</a></li>
+  <li><a href="/admin#settings">Settings</a></li>
+</ul>
 {% endblock %}
 {% block content %}
   <div class="col-md-12">
-    <p>
-      Merely a test.
-    </p>
+    <!-- Tab panes -->
+    <div class="row" id="competition">
+      <div class="col-md-3"><h4>Competition</h4></div>
+
+      <div class="col-md-9">
+        <p>
+          Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" id="users">
+      <div class="col-md-3"><h4>Users</h4></div>
+
+      <div class="col-md-9">
+        <table class="table table-striped">
+          <tr><th>Username</th><th>Role</th><th></th></tr>
+          {% for aUser in theUsers %}
+            <tr><td>{{ aUser[0] }}</td><td>{{ aUser[2] }}</td><td><button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td></tr>
+          {% endfor %}
+        </table>
+
+        <form class="form" role="form" method="POST" action="">
+          <div class="form-group">
+            <textarea class="form-control" rows="10" placeholder="username,password,role"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row" id="problems">
+      <div class="col-md-3"><h4>Problems</h4></div>
+
+      <div class="col-md-9">
+        <p>
+          Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="row" id="languages">
+      <div class="col-md-3"><h4>Languages</h4></div>
+
+      <div class="col-md-9">
+        <table class="table table-striped">
+          <tr><th>Username</th><th>Role</th><th></th></tr>
+          {% for aUser in theUsers %}
+            <tr><td>{{ aUser[0] }}</td><td>{{ aUser[2] }}</td><td><button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td></tr>
+          {% endfor %}
+        </table>
+
+        <form class="form" role="form" method="POST" action="">
+          <div class="form-group">
+            <textarea class="form-control" rows="10" placeholder="username,password,role"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="row" id="settings">
+      <div class="col-md-3"><h4>Settings</h4></div>
+
+      <div class="col-md-9">
+        <p>
+          Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.
+        </p>
+
+      </div>
+    </div>
   </div>
 {% endblock %}
