@@ -1,37 +1,7 @@
 {% extends "layout.html" %}
 {% block title %}Admin Panel{% endblock %}
 {% block js %}
-<script>
-  $(function() {
-    // Setup handlers.
-    $(".edit").hover(function() {
-      $(this).append($("<span class='glyphicon glyphicon-pencil' style='float: right;'></span>"));
-    }, function() {
-      $(this).find("span:last").remove();
-    });
-
-    $(".edit").click(function() {
-      var aParent = $(this).parent().find("td:not(:last)");
-      var aButton = $(this).parent().find("td:last").find("button");
-
-      for (var i = aParent.length - 1; i >= 0; i--) {
-        var aEle = aParent[i];
-        var aText = $(aEle).text();
-        $(aEle).html("<input type='text' class='form-control' value=" + aText + ">");
-        $(aEle).removeClass("edit").addClass("editing");
-        $(aEle).off("click mouseenter mouseleave");
-      };
-
-      aButton.find("span").attr("class", "glyphicon glyphicon-floppy-save");
-      aButton.removeClass("remove").addClass("save");
-    });
-
-    $(".save").click(function() {
-      $(this).find("span").attr("class", "glyphicon glyphicon-remove");
-      $(this).removeClass("save").addClass("remove");
-    });
-  });
-</script>
+  <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
 {% endblock %}
 {% block menu %}
 <ul class="nav navbar-nav">
@@ -68,7 +38,7 @@
               <td class="password edit" style="vertical-align: middle;">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</td>
               <td class="role edit" style="vertical-align: middle;">{{ aUser[2] }}</td>
               <td class="button">
-                <button class="btn btn-danger remove" style="width: 100%;">
+                <button class="btn btn-danger btn-edit" style="width: 100%;">
                   <span class="glyphicon glyphicon-remove" style="vertical-align: middle;"></span>
                 </button>
               </td>
@@ -76,10 +46,17 @@
           {% endfor %}
           <tr>
             <td><input type="text" class="form-control" id="newUsername" name="newUsername" placeholder="Username"></td>
-            <td><input type="text" class="form-control" id="newUserPwd" name="newUserPwd" placeholder="Password"></td>
-            <td><input type="text" class="form-control" id="newUserRole" name="newUserRole" placeholder="Role"></td>
+            <td><input type="text" class="form-control" id="newPassword" name="newUserPwd" placeholder="Password"></td>
             <td>
-                <button class="btn btn-success" id="add" style="width: 100%;">
+              <select class="form-control" id="newRole" name="newUserRole">
+                <option></option>
+                <option value="admin">Admin</option>
+                <option value="contestant">Contestant</option>
+                <option value="judge">Judge</option>
+              </select>
+            </td>
+            <td>
+                <button class="btn btn-success" id="btn-add" style="width: 100%;">
                   <span class="glyphicon glyphicon-ok" style="vertical-align: middle;"></span>
                 </button>
               </td>

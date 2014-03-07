@@ -106,6 +106,28 @@ def session():
   )
 ##############################################################################
 
+## API pages. ################################################################
+@myApp.route("/api/addUser", methods=["POST"])
+def addUser():
+  aUsername = flask.request.form["theUsername"]
+  aPassword = flask.request.form["thePassword"]
+  aRole = flask.request.form["theRole"]
+  return str(model.addUser(aUsername, aPassword, aRole))
+
+@myApp.route("/api/deleteUser", methods=["POST"])
+def deleteUser():
+  aUsername = flask.request.form["theUsername"]
+  return str(model.deleteUser(aUsername))
+
+@myApp.route("/api/editUser", methods=["POST"])
+def editUser():
+  aUsername = flask.request.form["theUsername"]
+  aPassword = flask.request.form["thePassword"]
+  aRole = flask.request.form["theRole"]
+  model.editUser(aUsername, aPassword, aRole)
+  return "Some response."
+##############################################################################
+
 ## Error pages. ##############################################################
 @myApp.errorhandler(404)
 def notFound(theError):
