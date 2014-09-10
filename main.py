@@ -17,6 +17,8 @@ def index():
   if flask.session.has_key("present") and flask.session["present"]:
     return flask.redirect(flask.url_for(str(flask.session["role"])))
 
+  flask.session["present"] = False
+
   return flask.render_template("index.html")
 ##############################################################################
 
@@ -34,7 +36,11 @@ def admin():
     return flask.redirect(flask.url_for("login"))
 
   if flask.session.has_key("role") and flask.session["role"] == "admin":
-    return flask.render_template("admin.html", theUsers=model.getUsers())
+    return flask.render_template(
+      "admin.html",
+      theUsers=model.getUsers(),
+      theProblems=model.getProblems()
+    )
 
   return flask.redirect(flask.url_for("forbidden"))
 
@@ -99,11 +105,21 @@ def logout():
 @myApp.route("/session")
 def session():
   aRet = "Session:\t{0}<br />Username:\t{1}<br />Role:\t\t{2}"
-  return aRet.format(
-    flask.session["present"],
-    flask.session["username"],
-    flask.session["role"]
-  )
+
+  if not flask.session["present"]:
+    return aRet.format(False, None, None)
+  else:
+    return aRet.format(
+      flask.session["present"],
+      flask.session["username"],
+      flask.session["role"]
+    )
+##############################################################################
+
+## Test pages  ###############################################################
+@myApp.route("/users")
+def users():
+  return flask.render_template("users.html", theUsers=model.getUsers())
 ##############################################################################
 
 ## API pages. ################################################################
@@ -126,12 +142,24 @@ def editUser():
   aRole = flask.request.form["theRole"]
   model.editUser(aUsername, aPassword, aRole)
   return "Some response."
+
+@myApp.route("/api/newProblem", methods=["POST"])
+def newProblem():
+  aForm = flask.request.form
+  return model.newProblem(
+    aForm["problemNumber"],
+    aForm["problemName"],
+    aForm["problemInput"],
+    aForm["problemOutput"],
+    aForm["problemMethod"],
+    aForm["problemTimeLimit"]
+  )
 ##############################################################################
 
 ## Error pages. ##############################################################
-@myApp.errorhandler(404)
-def notFound(theError):
-  return flask.render_template("blank.html", stuff=theError)
+# @myApp.errorhandler(404)
+# def notFound(theError):
+#   return flask.render_template("blank.html", stuff=theError)
 
 @myApp.route("/forbidden")
 def forbidden():

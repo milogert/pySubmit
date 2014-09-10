@@ -20,7 +20,34 @@ function addUser(theEvent) {
 
   aRequest.fail(function() {
     console.log("Dead.");
-  })
+  });
+
+  // DOM changes.
+  $("#userTable tr:last").before("\
+    <tr>\
+      <td>" + aUsername + "</td>\
+      <td>&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</td>\
+      <td>" + aRole + "</td>\
+      <td class='button'>\
+        <button class='btn btn-danger btn-edit' style='width: 100%;'>\
+          <span class='glyphicon glyphicon-remove' style='vertical-align: middle;'></span>\
+        </button>\
+      </td>\
+    </tr>\
+  ");
+
+  // Reactivate the newly created button.
+  $(".btn-edit").on("click", removeRow);
+
+  // Reset the forms.
+  var aForms = $("#userTable tr:last").find("input, select");
+
+  for (var i = aForms.length - 1; i >= 0; i--) {
+    $(aForms[i]).val("");
+  };
+
+  // Focus the first form again.
+  $(aForms[0]).focus();
 }
 
 function showEdit(theEvent) {
@@ -43,7 +70,6 @@ function editRow(theEvent) {
   };
 
   aButton.find("span").attr("class", "glyphicon glyphicon-floppy-save");
-  // aButton.removeClass("remove").addClass("save");
   aButton.off("click");
   aButton.on("click", saveRow);
 }
@@ -121,7 +147,7 @@ $(function() {
 
   $(".edit").click(editRow);
 
-  $(".btn-edit").on("click", removeRow)
+  $(".btn-edit").on("click", removeRow);
 
   $("#btn-add").on("click", addUser);
 });

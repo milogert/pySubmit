@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Users{% endblock %}
+{% block content %}
+  <div class="col-md-12">
+    <table class="table">
+      <tr><th>Username</th><th>Password</th><th>Role</th></tr>
+      {% for aUser in theUsers %}
+        <tr>
+          <td>{{ aUser[0] }}</td>
+          <td>{{ aUser[1] }}</td>
+          <td>{{ aUser[2] }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+{% endblock %}

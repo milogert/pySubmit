@@ -1,17 +1,20 @@
 {% extends "layout.html" %}
 {% block title %}Admin Panel{% endblock %}
+{% block css %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+{% endblock %}
 {% block js %}
   <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
 {% endblock %}
 {% block menu %}
-<ul class="nav navbar-nav">
-  <li><a href="/admin">Admin Panel</a></li>
-  <li><a href="/admin#competition">Competition</a></li>
-  <li><a href="/admin#users">Users</a></li>
-  <li><a href="/admin#problems">Problems</a></li>
-  <li><a href="/admin#languages">Languages</a></li>
-  <li><a href="/admin#settings">Settings</a></li>
-</ul>
+  <ul class="nav navbar-nav">
+    <li><a href="/admin">Admin Panel</a></li>
+    <li><a href="/admin#competition">Competition</a></li>
+    <li><a href="/admin#users">Users</a></li>
+    <li><a href="/admin#problems">Problems</a></li>
+    <li><a href="/admin#languages">Languages</a></li>
+    <li><a href="/admin#settings">Settings</a></li>
+  </ul>
 {% endblock %}
 {% block content %}
   <div class="col-md-12">
@@ -30,16 +33,16 @@
       <div class="col-md-3"><h4>Users</h4></div>
 
       <div class="col-md-9">
-        <table class="table table-striped">
+        <table class="table table-striped" id="userTable">
           <tr><th>Username</th><th>Password</th><th>Role</th><th></th></tr>
           {% for aUser in theUsers %}
             <tr>
-              <td class="username edit" style="vertical-align: middle;">{{ aUser[0] }}</td>
-              <td class="password edit" style="vertical-align: middle;">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</td>
-              <td class="role edit" style="vertical-align: middle;">{{ aUser[2] }}</td>
+              <td class="username edit">{{ aUser[0] }}</td>
+              <td class="password edit">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</td>
+              <td class="role edit">{{ aUser[2].title() }}</td>
               <td class="button">
                 <button class="btn btn-danger btn-edit" style="width: 100%;">
-                  <span class="glyphicon glyphicon-remove" style="vertical-align: middle;"></span>
+                  <span class="glyphicon glyphicon-remove"></span>
                 </button>
               </td>
             </tr>
@@ -69,12 +72,129 @@
       <div class="col-md-3"><h4>Problems</h4></div>
 
       <div class="col-md-9">
-        <p>
-          Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.Content and junk.
-        </p>
+        <div class="panel-group" id="accordion">
+          {% if theProblems %}
+            {% for aProblem in theProblems %}
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#problem{{ loop.index0 }}">
+                      {{ aProblem[0] }}.  {{ aProblem[1] }}<span style="float: right;">Time limit: {{ aProblem[5] }} minutes</span>
+                    </a>
 
+                  </h4>
+                </div>
+                <div id="problem{{ loop.index0 }}" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <form class="form form-horizontal" role="form" id="newProblem" method="POST" action="/api/newProblem">
+                      <div class="form-group">
+                        <label for="problemName" class="col-md-3 control-label">Problem Name</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control" id="problemName" name="problemName" placeholder="Enter the problem name" value="{{ aProblem[1] }}" disabled>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="problemNumber" class="col-md-3 control-label">Problem Number</label>
+                        <div class="col-md-9">
+                          <input type="number" class="form-control" id="problemNumber" name="problemNumber" placeholder="Enter the problem number" value="{{ aProblem[0] }}" disabled>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="problemInput" class="col-md-3 control-label">Problem Input</label>
+                        <div class="col-md-9">
+                          <textarea class="form-control" id="problemInput" name="problemInput" placeholder="What is the input for the problem?" rows="3" disabled>{{ aProblem[2] }}</textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="problemOutput" class="col-md-3 control-label">Solution Output</label>
+                        <div class="col-md-9">
+                          <textarea class="form-control" id="problemOutput" name="problemOutput" placeholder="What is the expected output for the solution?" rows="3" disabled>{{ aProblem[3] }}</textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="problemJudgingMethod" class="col-md-3 control-label">Judging Method</label>
+                        <div class="col-md-9">
+                          <select class="form-control" id="problemMethod" name="problemMethod" disabled>
+                            {% if aProblem[4] == "auto" %}
+                              <option value="auto" selected>Auto-judge</option>
+                              <option value="manual">Manual judging</option>
+                            {% else %}
+                              <option value="auto">Auto-judge</option>
+                              <option value="manual" selected>Manual judging</option>
+                            {% endif %}
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="problemTimeLimit" class="col-md-3 control-label">Time Limit (in minutes)</label>
+                        <div class="col-md-9">
+                          <input type="number" class="form-control" id="problemTimeLimit" name="problemTimeLimit" placeholder="Enter the problem time limit" value="{{ aProblem[5] }}" disabled>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-offset-3 col-md-9">
+                          <button type="submit" class="btn btn-danger" formaction="/api/newProblem">Delete</button>
+                          <button class="btn btn-primary">Edit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+            <br />
+          {% else %}
+            <p>No problems. You should add one.</p>
+          {% endif %}
+          <form class="form form-horizontal" role="form" id="newProblem" method="POST" action="/api/newProblem">
+            <div class="form-group">
+              <label for="problemName" class="col-md-3 control-label">Problem Name</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="problemName" name="problemName" placeholder="Enter the problem name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="problemNumber" class="col-md-3 control-label">Problem Number</label>
+              <div class="col-md-9">
+                <input type="number" class="form-control" id="problemNumber" name="problemNumber" placeholder="Enter the problem number">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="problemInput" class="col-md-3 control-label">Problem Input</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="problemInput" name="problemInput" placeholder="What is the input for the problem?" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="problemOutput" class="col-md-3 control-label">Solution Output</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="problemOutput" name="problemOutput" placeholder="What is the expected output for the solution?" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="problemJudgingMethod" class="col-md-3 control-label">Judging Method</label>
+              <div class="col-md-9">
+                <select class="form-control" id="problemMethod" name="problemMethod">
+                  <option value="auto">Auto-judge</option>
+                  <option value="manual">Manual judging</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="problemTimeLimit" class="col-md-3 control-label">Time Limit (in minutes)</label>
+              <div class="col-md-9">
+                <input type="number" class="form-control" id="problemTimeLimit" name="problemTimeLimit" placeholder="Enter the problem time limit">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-3 col-md-9">
+                <button class="btn btn-danger">Reset the Form</button>
+                <button type="submit" class="btn btn-success" formaction="/api/newProblem">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-
     </div>
 
     <div class="row" id="languages">
